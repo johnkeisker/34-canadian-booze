@@ -24,12 +24,7 @@
     </div>
     <div class="list">
 
-      <div class="item item-input-inset">
-        <label class="item-input-wrapper">
-          <input type="text" placeholder="Search for Booze!!!" ng-model="productsCtrl.input">
-        </label>
 
-      </div>
 
       <a class="item item-thumbnail-left" ng-repeat="product in productsCtrl.products" ui-sref="product({ id: product.id })">
         <img ng-src="{{ product.image_thumb_url }}">

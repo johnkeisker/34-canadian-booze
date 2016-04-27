@@ -3,7 +3,7 @@ class ProductsController {
     this._ProductsService = ProductsService;
     this.input = "";
 
-    this.getProducts();
+    // this.getProducts();
   }
 
   getProducts() {
