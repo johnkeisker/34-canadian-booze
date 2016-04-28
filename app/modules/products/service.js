@@ -5,7 +5,7 @@ class ProductsService {
 
   all() {
     return this._$http
-      .get(`https://lcboapi.com/products/${id}?access_key=MDo2ZTNjYjZiZS0wYzk2LTExZTYtOTIwNC03MzM5M2RiYzIyMTM6Ykxhc2VUcXZKUGdteWNCUlRjUk5Kb2czd2VtSHA2azVtQkxr`)
+      .get(`https://lcboapi.com/products?access_key=MDo2ZTNjYjZiZS0wYzk2LTExZTYtOTIwNC03MzM5M2RiYzIyMTM6Ykxhc2VUcXZKUGdteWNCUlRjUk5Kb2czd2VtSHA2azVtQkxr`)
   }
 
   get(id) {

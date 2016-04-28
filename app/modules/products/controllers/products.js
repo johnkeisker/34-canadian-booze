@@ -1,25 +1,22 @@
 class ProductsController {
   constructor(ProductsService) {
     this._ProductsService = ProductsService;
-    this.input = "";
+    this.terms = "";
 
-    // this.getProducts();
-  }
-
-  getProducts() {
     this._ProductsService.all()
       .then((response) => {
         this.products = response.data.result;
       });
   }
 
-  search() {
-    console.log(`searching for ${this.products}`);
 
-    this._ProductsService.search(this.input)
+  search() {
+    console.log(`searching for ${this.terms}`);
+
+    this._ProductsService.search(this.terms)
       .then((response) => {
         this.products = response.data.result;
-        this.input = "";
+        this.terms = "";
       });
   }
 }
